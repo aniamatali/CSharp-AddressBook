@@ -1,0 +1,10 @@
+<!doctype html>
+<h1>Profiles</h1>
+<ul>
+  @foreach (var user in Model)
+  {
+    <p><a href='/users/@user.GetId()'>Name:@user.GetDescription()<br> Address:@user.GetAddress()<br> Phone#:@user.GetNumber()</a></p>
+
+  }
+</ul>
+<a href='/users/new'>Add new Profile.</a>
